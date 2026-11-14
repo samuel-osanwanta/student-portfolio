@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Student portfolio of Osanwanta Eniola Samuel, cybersecurity student.">
+<title>Contact | Osanwanta Eniola Samuel</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site">
+<div class="wrap bar">
+<a class="brand" href="index.html">Eniola Samuel</a>
+<button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="nav-list">Menu</button>
+<nav aria-label="Main"><ul id="nav-list"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="projects.html">Projects</a></li><li><a href="planner.html">Planner</a></li><li><a href="contact.html" aria-current="page">Contact</a></li></ul></nav>
+</div>
+</header>
+<main>
+<section class="section">
+<div class="wrap narrow">
+<h1>Contact me</h1>
+<p>Fill in every field and I’ll know how to reach you.</p>
+<form id="contact-form" novalidate>
+<div class="field"><label for="name">Name</label><input id="name" name="name" type="text" autocomplete="name"><span class="error" id="name-error"></span></div>
+<div class="field"><label for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email"><span class="error" id="email-error"></span></div>
+<div class="field"><label for="phone">Phone number</label><input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="numeric"><span class="error" id="phone-error"></span></div>
+<div class="field"><label for="message">Message</label><textarea id="message" name="message" rows="5"></textarea><span class="error" id="message-error"></span></div>
+<button class="btn" type="submit">Send message</button>
+</form>
+<p class="success" id="form-success" role="status"></p>
+<p class="note">This is a demo form. It checks your entries in the browser and doesn’t send email.</p>
+</div>
+</section>
+</main>
+<footer class="site">
+<div class="wrap"><p>&copy; <span id="year">2026</span> Osanwanta Eniola Samuel. Built for COS 106, MIVA Open University.</p></div>
+</footer>
+<script src="js/main.js"></script>
+<script src="js/contact.js"></script>
+</body>
+</html>

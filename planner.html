@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Student portfolio of Osanwanta Eniola Samuel, cybersecurity student.">
+<title>Academic Planner | Osanwanta Eniola Samuel</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site">
+<div class="wrap bar">
+<a class="brand" href="index.html">Eniola Samuel</a>
+<button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="nav-list">Menu</button>
+<nav aria-label="Main"><ul id="nav-list"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="projects.html">Projects</a></li><li><a href="planner.html" aria-current="page">Planner</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+</div>
+</header>
+<main>
+<section class="section">
+<div class="wrap narrow">
+<h1>Academic planner</h1>
+<p>Add your study tasks, tick them off when they’re done, and delete the ones you no longer need. Your list is saved in this browser.</p>
+<form id="task-form" class="task-form" novalidate>
+<div class="field grow"><label for="task-input">Task</label><input id="task-input" type="text" placeholder="e.g. Revise networking notes" autocomplete="off"></div>
+<div class="field"><label for="task-date">Due date (optional)</label><input id="task-date" type="date"></div>
+<button class="btn" type="submit">Add task</button>
+</form>
+<p class="error" id="task-error" role="alert"></p>
+<p class="count" id="task-count" aria-live="polite"></p>
+<ul id="task-list" class="tasks"></ul>
+<p id="task-empty" class="empty">No tasks yet. Add your first one above.</p>
+<figure class="sound">
+<figcaption>Completion sound (plays when you finish a task)</figcaption>
+<audio id="done-sound" controls src="media/chime.wav">Your browser does not support audio.</audio>
+</figure>
+</div>
+</section>
+</main>
+<footer class="site">
+<div class="wrap"><p>&copy; <span id="year">2026</span> Osanwanta Eniola Samuel. Built for COS 106, MIVA Open University.</p></div>
+</footer>
+<script src="js/main.js"></script>
+<script src="js/planner.js"></script>
+</body>
+</html>
